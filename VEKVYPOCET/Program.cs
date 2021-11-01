@@ -11,12 +11,12 @@ namespace ConsoleApp1
 
             Console.CursorVisible = false;
             Console.SetCursorPosition(10, 10);
-            Console.WriteLine();
+            Console.WriteLine("┌──────────────────────────┐");
             Console.SetCursorPosition(10, 11);
-            Console.WriteLine("Zadejte svůj rok narození");
-            double.TryParse(Console.ReadLine(), out rok);
+            Console.WriteLine("│ Zadejte svůj rok narození│");
             Console.SetCursorPosition(10, 12);
-            Console.WriteLine();
+            Console.WriteLine("└──────────────────────────┘");
+            double.TryParse(Console.ReadLine(), out rok);
             Console.ReadLine();
 
             vypocet = (DateTime.Now.Year - rok);
