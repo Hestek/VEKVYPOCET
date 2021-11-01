@@ -20,23 +20,25 @@ namespace ConsoleApp1
             Console.ReadLine();
 
             vypocet = (DateTime.Now.Year - rok);
-            if (vypocet > 100)
+            if (vypocet >= 100 & vypocet == 100)
                 Console.WriteLine("Neplatny rok narození");
             if (rok == 2021)
                 Console.WriteLine("Neplatny rok narození");
-            if (vypocet < 6)
+            if (vypocet >= 1 & vypocet <= 6)
                 Console.WriteLine($"Je vam { vypocet } let, jste stále jen dítě");
-            if (vypocet > 15)
+            if (vypocet >= 15 & vypocet <= 18)
                 Console.WriteLine($"Je vam { vypocet } let, jste už teenager");
-            if (vypocet > 18)
+            if (vypocet >= 19 & vypocet <= 22)
+                Console.WriteLine($"Je vam { vypocet } let, jste pravděpodobně student");
+            if (vypocet >= 23 & vypocet <= 30)
                 Console.WriteLine($"Je vam { vypocet } let, jste už dospělý");
-            if (vypocet > 30)
+            if (vypocet >= 31 & vypocet <= 40)
                 Console.WriteLine($"Je vam { vypocet } let, Nejelpší léta už jsou z vámi");
-            if (vypocet > 40)
+            if (vypocet >= 41 & vypocet <= 50)
                 Console.WriteLine($"Je vam { vypocet } let, stále nejste moc starý");
-            if (vypocet > 50)
+            if (vypocet >= 51 & vypocet <= 65)
                 Console.WriteLine($"Je vam { vypocet } let, pomaličku už se chystejte do důchodu");
-            if (vypocet > 65)
+            if (vypocet > 66 & vypocet <= 99)
                 Console.WriteLine($"Je vam { vypocet } let, už jste v důchodu");
 
 
