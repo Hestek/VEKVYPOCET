@@ -20,26 +20,32 @@ namespace ConsoleApp1
             Console.ReadLine();
 
             vypocet = (DateTime.Now.Year - rok);
+
+            Console.SetCursorPosition(10, 14);
+            Console.WriteLine("┌──────────────────────────────────────────────────────┐");
+            Console.SetCursorPosition(10, 15);
             if (vypocet >= 100 & vypocet == 100)
-                Console.WriteLine("Neplatny rok narození");
+            Console.WriteLine("│Neplatny rok narození                                           │");
             if (rok == 2021)
-                Console.WriteLine("Neplatny rok narození");
+            Console.WriteLine("│Neplatny rok narození                                           │");
             if (vypocet >= 1 & vypocet <= 6)
-                Console.WriteLine($"Je vam { vypocet } let, jste stále jen dítě");
+            Console.WriteLine($"│Je vam { vypocet } let, jste stále jen dítě                    │");
             if (vypocet >= 15 & vypocet <= 18)
-                Console.WriteLine($"Je vam { vypocet } let, jste už teenager");
-            if (vypocet >= 19 & vypocet <= 22)
-                Console.WriteLine($"Je vam { vypocet } let, jste pravděpodobně student");
+            Console.WriteLine($"│Je vam { vypocet } let, jste už teenager                       │");
+            if (vypocet >= 19 & vypocet <= 22) 
+            Console.WriteLine($"│Je vam { vypocet } let, jste pravděpodobně student             │");
             if (vypocet >= 23 & vypocet <= 30)
-                Console.WriteLine($"Je vam { vypocet } let, jste už dospělý");
+            Console.WriteLine($"│Je vam { vypocet } let, jste už dospělý                        │");
             if (vypocet >= 31 & vypocet <= 40)
-                Console.WriteLine($"Je vam { vypocet } let, Nejelpší léta už jsou z vámi");
+            Console.WriteLine($"│Je vam { vypocet } let, Nejelpší léta už jsou z vámi           │");
             if (vypocet >= 41 & vypocet <= 50)
-                Console.WriteLine($"Je vam { vypocet } let, stále nejste moc starý");
+            Console.WriteLine($"│Je vam { vypocet } let, stále nejste moc starý                 │");
             if (vypocet >= 51 & vypocet <= 65)
-                Console.WriteLine($"Je vam { vypocet } let, pomaličku už se chystejte do důchodu");
+            Console.WriteLine($"│Je vam { vypocet } let, chystejte se na stáří                  │");
             if (vypocet > 66 & vypocet <= 99)
-                Console.WriteLine($"Je vam { vypocet } let, už jste v důchodu");
+            Console.WriteLine($"│Je vam { vypocet } let, už jste v důchodu                      │");
+            Console.SetCursorPosition(10, 16);
+            Console.WriteLine("└──────────────────────────────────────────────────────┘");
 
 
         }
